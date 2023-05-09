@@ -22,7 +22,15 @@ const openai = new OpenAIApi(configuration);
 // // Middleware to parse JSON-formatted request bodies
 app.use(bodyParser.json());
 
-app.use(cors()); // add CORS
+// app.use(cors()); // add CORS
+app.use(cors({
+    origin: [
+      'http://localhost:3000',
+      'https://645abf09fcabeb3c4df98a30--clinquant-semolina-90a57c.netlify.app'
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
 
 app.post('/', async (req, res) => {
     const { message, strategy } = req.body;
