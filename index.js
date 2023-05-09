@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 const configuration = new Configuration({
     organization: process.env.ORGANIZATION_KEY, // replace with your own organization key
