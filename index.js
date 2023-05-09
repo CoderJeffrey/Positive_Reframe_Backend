@@ -26,7 +26,8 @@ app.use(bodyParser.json());
 app.use(cors({
     origin: [
       'http://localhost:3000',
-      'https://645abf09fcabeb3c4df98a30--clinquant-semolina-90a57c.netlify.app'
+      'https://645abf09fcabeb3c4df98a30--clinquant-semolina-90a57c.netlify.app',
+      'https://645ac51d605f5a4822ad9269--coruscating-begonia-d3cd9d.netlify.app/'
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
