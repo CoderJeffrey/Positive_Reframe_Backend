@@ -26,6 +26,7 @@ app.use(bodyParser.json());
 app.use(cors({
     origin: [
       'http://localhost:3000',
+      'https://646ae00dd4f25f0f2da83b09--shimmering-concha-8ab348.netlify.app',
       'https://646ae00dd4f25f0f2da83b09--shimmering-concha-8ab348.netlify.app/'
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
